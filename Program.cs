@@ -27,7 +27,20 @@ namespace Task_17
                         Console.Write(array[i] + " ");
                     }
                 }
-                array[i] = rand.Next(1, 50);
+                else if (i == 0)
+                {
+                    if (array[i] > array[i + 1])
+                    {
+                        Console.Write(array[i] + " ");
+                    }
+                }
+                else if(i == array.Length)
+                {
+                    if(array[i] > array[i - 1])
+                    {
+                        Console.Write(array[i] + " ");
+                    }
+                }
             }
             
             Console.ReadKey();
